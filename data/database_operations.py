@@ -12,7 +12,7 @@ def connect_to_database():
     )
 
 # Fonction pour effectuer une requête SELECT spécifique
-def select_specific_cols():
+def select_all():
     with connect_to_database() as mydb:
         with mydb.cursor() as cursor:
             query = "SELECT NumCinema, NomCinema, RueCinema FROM cinema;"
