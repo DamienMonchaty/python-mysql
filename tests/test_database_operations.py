@@ -22,7 +22,7 @@ def setup_database():
                 cursor.execute("INSERT INTO cinema (NumCinema, NomCinema, RueCinema) VALUES (1, 'CinemaTest', 'RueTest');")
                 mydb.commit()
 
-# Test la fonction select_all
+# Test la fonction select_all ...
 def test_select_all(setup_database):
     results = select_all()
     assert len(results) > 0
